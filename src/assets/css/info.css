@@ -1,0 +1,61 @@
+*{margin: 0;padding: 0}
+
+.bg{background-size: cover;background-repeat: no-repeat;min-height: 98.7vh;background-position: center;background-attachment: fixed}
+
+.bg-after-index{opacity: 0.4;filter:alpha(opacity=40);background-size: cover;background-color: white;position: fixed;top: 0;left: 0;height: 100%;width: 100%;z-index: -1;background-repeat: no-repeat}
+
+.title{height: 70px;width: 100%;background-color: rgba(15, 118, 255, 0.5)}
+
+.title ul{list-style: none;display: block;width: 1200px;margin: 0 auto;}
+
+.logo{display: block;float: left;height: 70px;padding-right: 20px;line-height: 70px;text-decoration: none;color: black;font-family: "微软雅黑 Light";font-weight: bolder;font-size: 20px}
+
+.title ul li a:not(.logo){display: block;float: left;height: 70px;margin-left: 20px;padding-left: 20px;padding-right: 20px;
+    line-height: 70px;text-decoration: none;color: black;font-weight: bold;font-family: "微软雅黑 Light";font-weight: 600}
+
+.mid{width: 1200px;margin: 0 auto}
+
+.user{display: block;float: right;height: 70px;margin-right: 50px;line-height: 70px;text-decoration: none;font-weight: bold;font-family: "微软雅黑 Light";color: rgb(255, 203, 0);font-weight: 600;font-size: 19px}
+
+.title a:hover{color: red}
+
+.title ul li a:hover{color: red}
+
+.table-box{height: 1000px;margin-top: 90px;background-color: rgba(175, 198, 255, 0.5);border-radius: 50px}
+
+.left-box{float: left;width: 200px;height: 100%;
+    border-right: #240bff solid 2px}
+
+.function{margin-left: 60px;margin-top: 30px;}
+
+.function a{text-decoration: none;color: #000000;font-size: 18px;font-family: "微软雅黑 Light"}
+
+.function a:hover{color: red}
+
+.nickname{float: right;height: 400px;width: 996px}
+
+.oldpass-title{margin-top: 30px;font-size: 24px;text-align: center;color: red;}
+
+.inputtext{font-size: 18px;font-family: "微软雅黑 Light";margin-top: 50px}
+
+.inputbox{height: 24px;font-size: 22px;width: 200px;background: none;border: 1px solid #5d1aff}
+
+.inputtext[id^="ansbox"]{font-weight: bolder;}
+
+.textbox{height: 24px;width: 200px;background: none;font-size: 16px;;line-height: 24px;border: 1px solid #5d1aff}
+
+.button{height: 40px;width: 100px;background-color: rgba(255,162,0,0.5);border: 1px solid black;margin-left: 450px;margin-top: 50px}
+
+.filebox{height: 25px;font-size: 14px;width: 200px;background: none;border: 1px solid #5d1aff}
+
+.sample{margin-left: 5px;font-size: 16px;;line-height: 24px;}
+
+.setans input[class="textbox"]{margin-left: 17px}
+
+.bar-outbox{position: absolute;left: 426px;top: 220px;height: 8px;width: 200px;border: black solid 1px;border-radius: 10px}
+
+.bar{position: absolute;left: 2px;top: 1px;height: 6px;width: 0px;background-color: red;border-radius: 6px}
+
+.bar-num{position: absolute;left: 208px;top: -4px;font-size: 6px}
+
+.origin{display: inline-block;margin-left: 10px;font-size: 16px;color: #1f3eff;text-decoration: none;line-height: 26px}

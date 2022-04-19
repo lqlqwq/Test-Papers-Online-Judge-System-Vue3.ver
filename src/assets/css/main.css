@@ -1,0 +1,44 @@
+*{margin: 0;padding: 0}
+
+.bg{background-size: cover;background-repeat: no-repeat;min-height: 98.7vh;background-position: center;background-attachment: fixed}
+
+.bg-after-index{opacity: 0.4;filter:alpha(opacity=40);background-size: cover;background-color: white;position: fixed;top: 0;left: 0;height: 100%;width: 100%;z-index: -1;background-repeat: no-repeat}
+
+.bg-limit{overflow: scroll;overflow-x: hidden}
+
+.title{height: 70px;width: 100%;background-color: rgba(15, 118, 255, 0.5)}
+
+.title ul{list-style: none;display: block;width: 1200px;margin: 0 auto;}
+
+.logo{display: block;float: left;height: 70px;padding-right: 20px;line-height: 70px;text-decoration: none;color: black;font-family: "微软雅黑 Light";font-weight: bolder;font-size: 20px}
+
+.title ul li a:not(.logo){display: block;float: left;height: 70px;margin-left: 20px;padding-left: 20px;padding-right: 20px;
+    line-height: 70px;text-decoration: none;color: black;font-weight: bold;font-family: "微软雅黑 Light";font-weight: 600}
+
+.mid{width: 1200px;margin: 0 auto}
+
+.user{display: block;float: right;height: 70px;margin-right: 50px;line-height: 70px;text-decoration: none;font-weight: bold;font-family: "微软雅黑 Light";color: rgb(255, 203, 0);font-weight: 600;font-size: 19px}
+
+.title a:hover{color: red}
+
+.title ul li a:hover{color: red}
+
+.mid{width: 1200px;margin: 0 auto}
+
+.table-box{height: 100%;min-height: 1010px;margin-bottom: 50px;padding-bottom: 30px;box-sizing: border-box;margin-top: 90px;background-color: rgba(175, 198, 255, 0.5);border-radius: 50px}
+
+.table-box *{text-align: center}
+
+.table-box a{border: none;color: blue;text-decoration: none;font-weight: bold}
+
+.table-box a:hover{color: red}
+
+.table-box td{width: 100px;height: 68px}
+
+.table-title{font-size: 19px;font-family: 微软雅黑;font-weight: bold;}
+
+.nextPage{float: right;margin-right: 115px;margin-top: -10px;font-size: 20px;color: #38ff00 !important;}
+
+.nextPage:hover{color: red!important;}
+
+.go-top{height: 50px;width: 50px;position: fixed;left: 50%;margin-left: 605px;top: 80vh;background: url("../img/icon/go-top.png") no-repeat;background-size: 100%}

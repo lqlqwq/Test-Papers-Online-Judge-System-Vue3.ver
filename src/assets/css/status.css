@@ -1,0 +1,90 @@
+*{margin: 0;padding: 0}
+
+.clearfix:before,.clearbox:after{content: "";display: table;}
+
+.clearfix:after{clear: both;}
+
+.bg{background-size: cover;background-repeat: no-repeat;min-height: 100vh;background-position: center;background-attachment: fixed}
+
+.bg-limit{overflow: scroll;overflow-x: hidden}
+
+.bg-after-index{opacity: 0.4;filter:alpha(opacity=40);background-size: cover;background-color: white;position: fixed;top: 0;left: 0;height: 100%;width: 100%;z-index: -1;background-repeat: no-repeat}
+
+.title{height: 70px;width: 100%;background-color: rgba(15, 118, 255, 0.5)}
+
+.title ul{list-style: none;display: block;width: 1200px;margin: 0 auto;}
+
+.logo{display: block;float: left;height: 70px;padding-right: 20px;line-height: 70px;text-decoration: none;color: black;font-family: "微软雅黑 Light";font-weight: bolder;font-size: 20px}
+
+.title ul li a:not(.logo){display: block;float: left;height: 70px;margin-left: 20px;padding-left: 20px;padding-right: 20px;
+    line-height: 70px;text-decoration: none;color: black;font-weight: bold;font-family: "微软雅黑 Light";font-weight: 600}
+
+.mid{width: 1200px;margin: 0 auto}
+
+.user{display: block;float: right;height: 70px;margin-right: 50px;line-height: 70px;text-decoration: none;font-weight: bold;font-family: "微软雅黑 Light";color: rgb(255, 203, 0);font-weight: 600;font-size: 19px}
+
+.title a:hover{color: red}
+
+.title ul li a:hover{color: red}
+
+.table-box{height: 100%;min-height: 1010px;margin-bottom: 50px;margin-top: 90px;background-color: rgba(175, 198, 255, 0.5);border-radius: 50px}
+
+.table-box:after{content: "";display: block;height: 0;clear: both;visibility: hidden;}
+
+.left-box{float: left;width: 200px;height: 1010px;border-right: #240bff solid 2px}
+
+.scorebox{float: left;height: 100%;width: 980px;}
+
+.function{margin-left: 60px;margin-top: 30px;}
+
+.function a{text-decoration: none;color: #000000;font-size: 18px;font-family: "微软雅黑 Light"}
+
+.function a:hover{color: red}
+
+.score-title *{display: inline-block;font-size: 19px;font-family: 微软雅黑;font-weight: bold;text-align: center;width: 110px;height: 58px;line-height: 58px}
+
+.score-main *{display: inline-block;font-weight: bold;text-align: center;width: 110px;height: 57px;line-height: 58px}
+
+.mar-left{margin-left: 90px}
+
+.test{width: 480px;height: 480px;float: left;}
+
+.chart{text-decoration: none;color: #1f3eff}
+
+.chart:hover{color: red}
+
+.charts-out-box{height: 100%;width: 100%}
+
+.charts-out-box:after{content: "";display: block;height: 0;clear: both;visibility: hidden}
+
+.discuss-out-box{height: 100%;width: 100%;position: relative;margin-top: 20px}
+
+.discuss-title{margin-left: 120px;font-size: 20px;font-weight: bold;position: absolute;top: 0px}
+
+.discuss-box{width: 600px;height: 100%;position: relative;left: 220px;top: 3px;display: inline-block}
+
+.dis-input{height: 50px;width: 600px;background-color: rgba(0,0,0,0);font-size: 15px}
+
+.dis-button{display: inline-block;float: right;height: 25px;width: 50px;margin-top: 14px;background-color: rgba(255, 14, 223, 0.5);border: 1px solid red;text-decoration: none;color: black;text-align: center}
+
+.discuss-box-text{width: 690px;height: 100%;position: relative;left: 220px;top: 3px;display: inline-block}
+
+.next{height: 26px;position: relative}
+
+.next a{display: block;position: absolute;height: 20px;width: 50px;right: 60px;bottom: 10px;font-size: 16px;font-weight: bold;text-decoration: none;color: #b800ff}
+
+.go-top{height: 50px;width: 50px;position: fixed;left: 50%;margin-left: 605px;top: 80vh;background: url("../img/icon/go-top.png") no-repeat;background-size: 100%}
+
+.score-num h1{display: block;width: 200px;color: red;text-align: center}
+
+.score-repor *{display: inline-block;margin: 0 auto;text-align: center;width: 110px;height: 57px;}
+
+.repor-title{font-size: 19px;font-family: 微软雅黑;font-weight: bold;}
+
+.repor-box td{width: 100px;height: 68px;text-align: center}
+
+.repor-box a{border: none;color: blue;text-decoration: none;font-weight: bold}
+
+.repor-box a:hover{color: red}
+
+.go-back{height: 35px;width: 35px;position: fixed;left: 50%;margin-left: 612px;top: calc(80vh + 50px);background: url("../img/icon/back.png") no-repeat;background-size: 100%}

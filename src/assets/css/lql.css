@@ -1,0 +1,39 @@
+.bg{background-size: cover;background-repeat: no-repeat;min-height: 98.7vh;background-position: center;background-attachment: fixed}
+
+.bg-after{opacity: 0.2;filter:alpha(opacity=20);background-size: cover;background-color: white;position: fixed;top: 0;left: 0;height: 100%;width: 100%;z-index: -1}
+
+.register-out{height: 480px;padding-top: 20vh}
+
+.register{width: 360px;height: 520px;margin: auto;background-color: white;opacity: 0.5;position: relative}
+
+.login{width: 360px;height: 460px;margin: auto;background-color: white;opacity: 0.5;position: relative}
+
+.register-title{text-align: center;font-weight: normal;font-size: 25px;font-family: 'Microsoft YaHei UI';color: #1f3eff;padding: 15px;margin: auto;width: 260px;border-bottom: solid 1px;border-bottom-color: rgba(0,0,0,0.5);}
+
+.input-div{width: 300px;height: 40px;margin: 18px auto 0 auto}
+
+.input{height: 30px;width: 280px;font-size: 16px;display: block;margin-left: auto;margin-right: auto}
+
+.error_msg{width: 282px;height: 18px;margin: 0 auto 0 auto;font-size: 13px;font-weight: bold;color: red;}
+
+.v-code-input{height: 30px;width: 160px;font-size: 16px;display: block;margin: auto auto auto 8px}
+
+.v-code-img{width:80px;height:34px;cursor: pointer;margin-left: 30px;margin-top: 1px}
+
+.check{width: 282px;height: 18px;margin: 15px auto 0 auto}
+
+.check-font{font-size: 12px;position: relative;top: -2px}
+
+.check-pwd{font-size: 12px;font-weight: bold;position: relative;top: -2px;left: 120px;color: blue}
+
+.butt{height: 40px;width: 284px;margin: 20px auto 0 38px;background-color: #1f3eff;border: none;font-size: 20px;color: white;font-weight: bold}
+
+.to-register{width: 288px;height: 20px;margin: 18px auto 0 auto;font-size: 15px}
+
+.gov{margin-left: calc(50vw - 210px);position: relative;z-index: 1;}
+
+.gov a{text-decoration: none;color: black;font-size: 18px;font-family: "微软雅黑 Light";font-weight: bolder}
+
+.gov span{display: inline-block;height: 25px;width: 25px;margin-left: 50px;background: url("../img/icon/beian.png") no-repeat 100%;vertical-align: bottom}
+
+.back-main{position: absolute;display: block;left: -50px;top: 415px;height: 50px;width: 50px;background: url("../img/icon/backmain.png") no-repeat 100%;background-size: cover;}
