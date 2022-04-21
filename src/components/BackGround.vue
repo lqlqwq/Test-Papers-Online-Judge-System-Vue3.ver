@@ -4,7 +4,7 @@
 </template>
 
 <script setup>
-import bg from '@/assets/img/output-bg'  //background-image: url(${BG})
+import bg from '@/assets/img/output-bg'
 const props = defineProps({
     bgName: {
         type: String,

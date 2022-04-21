@@ -1,16 +1,20 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
-import { Login } from '@/router/asyncComponents'
+import { Login, Index } from '@/router/asyncComponents'
 
 const router = createRouter({
     history: createWebHashHistory(),
     routes: [
         {
             path: '/',
-            redirect: '/login'
+            redirect: '/index'
         },
         {
             path: '/login',
             component: Login
+        },
+        {
+            path: '/index',
+            component: Index
         }
     ]
 })
