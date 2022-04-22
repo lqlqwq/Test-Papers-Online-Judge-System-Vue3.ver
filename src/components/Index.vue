@@ -1,10 +1,11 @@
 <template>
     <img :src="BG.Hiten1" alt="" style="display: none">
     <div id="snow"></div>
-    <div style="display: none" id="top"><a href="#logo" class="go-top" :style="`background: url(${ICON.go_top})`"></a>
+    <div style="display: none" id="top"><a href="#logo" class="go-top"
+            :style="`background-image: url(${ICON.go_top})`"></a>
     </div> <!-- 回顶部 -->
     <div id="effects" class="effects"><a href="javascript:void(0)" class="effects-img" title="关闭特效"
-            :style="`background: url(${ICON.snow})`"></a></div> <!-- 关闭特效 -->
+            :style="`background-image: url(${ICON.snow})`"></a></div> <!-- 关闭特效 -->
     <div class="mainbox mid">
         <h3>大肥羊智能评卷系统</h3>
         <h1 style="margin-top: 40px">一款智能的评卷系统</h1>
@@ -75,14 +76,14 @@
     <div class="evaluation mid" id="evaluation">
         <div id="left-icon-box" style="display: none">
             <a href="javascript:void(0)" rel="external nofollow" class="next-icon"
-                :style="`background: url(${ICON.right})`" name="xxx"></a>
+                :style="`background-image: url(${ICON.right})`" name="xxx"></a>
         </div>
         <div id="right-icon-box" style="display: none">
             <a href="javascript:void(0)" rel="external nofollow" class="prev-icon"
-                :style="`background: url(${ICON.left})`" name="xxx"></a>
+                :style="`background-image: url(${ICON.left})`" name="xxx"></a>
         </div>
         <div class="banner" id="b04">
-            <ul>
+            <ul ref="banner">
                 <li><text class="iconfont">教师可以登录用户名lqlqwq密码159753进行体验&#xe601;&#xe601;</text></li>
                 <li><text class="iconfont">学生可以登录用户名shagou密码123321进行体验&#xe600;&#xe600;&#xe600;</text></li>
                 <li><text class="iconfont dowload">点击下载学生用交卷答题卡&#xe618;&#xe618;&#xe618;</text></li>
@@ -102,9 +103,9 @@
             <h2 style="margin-top: 85px" id="sup">大肥羊</h2>
             <h5 style="margin-top: 20px">致力于打造更好的师生互动评卷系统</h5>
             <h5 style="margin-top: 35px">© 大肥羊 • All Rights Reserved.</h5>
-            <div class="icon1" :style="`background: url(${ICON.github})`"></div>
-            <div class="icon2" :style="`background: url(${ICON.twitter})`"></div>
-            <button class="icon3 btn" :style="`background: url(${ICON.google})`" title="点击复制联系邮箱"
+            <div class="icon1" :style="`background-image: url(${ICON.github})`"></div>
+            <div class="icon2" :style="`background-image: url(${ICON.twitter})`"></div>
+            <button class="icon3 btn" :style="`background-image: url(${ICON.google})`" title="点击复制联系邮箱"
                 data-clipboard-text="lqlqwq1@gmail.com"></button>
         </div>
         <div class="bottom-mid">
@@ -128,7 +129,7 @@
     </div>
     <div class="gov">
         <a href="http://beian.miit.gov.cn/">浙ICP备2021034010号-1</a>
-        <span :style="`background: url(${ICON.beian})`"></span>
+        <span :style="`background-image: url(${ICON.beian})`"></span>
         <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=33010202001997">浙公网安备 33010202001997号</a>
     </div>
 </template>
@@ -136,7 +137,12 @@
 <script setup>
 import ICON from '@/assets/img/icon/output'
 import BG from '@/assets/img/output-bg'
-
+import { onMounted , getCurrentInstance , ref } from 'vue'
+let banner=ref(null)
+onMounted( () => {
+    console.log(getCurrentInstance())
+    console.log(banner.value)
+} )
 </script>
 
 <style scoped lang="scss">
@@ -300,18 +306,18 @@ import BG from '@/assets/img/output-bg'
     >.banner {
         position: relative;
         text-align: center;
-        width: 1200px;
+        width: 4800px;
         margin-top: 50px;
-
-        >.dowload {
-            cursor: pointer
-        }
 
         >ul>li {
             float: left;
             height: 350px;
             width: 1200px;
             list-style: none;
+
+            >.dowload {
+                cursor: pointer
+            }
 
             >text {
                 display: block;
@@ -487,6 +493,7 @@ import BG from '@/assets/img/output-bg'
         margin-left: 50px;
         background: no-repeat 100%;
         vertical-align: bottom;
+        transform: translateY(3px);
     }
 }
 </style>
