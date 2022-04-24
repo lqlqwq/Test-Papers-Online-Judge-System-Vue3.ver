@@ -65,9 +65,9 @@ body, html {
   -webkit-tap-highlight-color: transparent;
   // background: #F3F5FA;
   color: black;
-  // &::-webkit-scrollbar {
-  //   display: none
-  // }
+  &::-webkit-scrollbar {
+    display: none
+  }
 }
 
 button{

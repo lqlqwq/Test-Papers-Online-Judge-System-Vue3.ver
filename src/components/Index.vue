@@ -1,6 +1,5 @@
 <template>
     <img :src="BG.Hiten1" alt="" style="display: none">
-    <div id="snow"></div>
     <div style="display: none" id="top"><a href="#logo" class="go-top"
             :style="`background-image: url(${ICON.go_top})`"></a>
     </div> <!-- 回顶部 -->
@@ -18,7 +17,7 @@
     </div>
     <div class="reason mid" id="aaa">
         <div class="reason-left">
-            <h7 style="margin-top: 35px" class="bigfatsheep">为什么选择&nbsp&nbsp大肥羊</h7>
+            <h5 style="margin-top: 35px" class="bigfatsheep">为什么选择&nbsp&nbsp大肥羊</h5>
             <span class="shape"></span>
             <span class="now">迄今为止</span>
         </div>
@@ -73,16 +72,16 @@
             </li>
         </ul>
     </div>
-    <div class="evaluation mid" id="evaluation">
-        <div id="left-icon-box" style="display: none">
+    <div class="evaluation mid" id="evaluation" @mouseenter="showIcon" @mouseleave="hideIcon">
+        <div id="left-icon-box" v-show="bannerIcon">
             <a href="javascript:void(0)" rel="external nofollow" class="next-icon"
                 :style="`background-image: url(${ICON.right})`" name="xxx"></a>
         </div>
-        <div id="right-icon-box" style="display: none">
+        <div id="right-icon-box" v-show="bannerIcon">
             <a href="javascript:void(0)" rel="external nofollow" class="prev-icon"
                 :style="`background-image: url(${ICON.left})`" name="xxx"></a>
         </div>
-        <div class="banner" id="b04">
+        <div class="banner">
             <ul ref="banner">
                 <li><text class="iconfont">教师可以登录用户名lqlqwq密码159753进行体验&#xe601;&#xe601;</text></li>
                 <li><text class="iconfont">学生可以登录用户名shagou密码123321进行体验&#xe600;&#xe600;&#xe600;</text></li>
@@ -90,12 +89,6 @@
                 <li><text class="iconfont">雪花特效可以点击右侧雪花关闭&#xe68c;&#xe846;&#xe613;</text></li>
             </ul>
         </div>
-    </div>
-    <div style="display: none">
-        <a href="./img/other/1.png" download="test1" id="test1">下载答题卡模板</a>
-        <a href="./img/other/2.png" download="test2" id="test1">下载答题卡模板</a>
-        <a href="./img/other/3.png" download="test3" id="test1">下载答题卡模板</a>
-        <a href="./img/other/4.png" download="test4" id="test1">下载答题卡模板</a>
     </div>
     <div class="copyok">复制成功！(=・ω・=)</div>
     <div class="support mid">
@@ -132,6 +125,12 @@
         <span :style="`background-image: url(${ICON.beian})`"></span>
         <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=33010202001997">浙公网安备 33010202001997号</a>
     </div>
+    <div style="display: none">
+        <a href="./img/other/1.png" download="test1" id="test1">下载答题卡模板</a>
+        <a href="./img/other/2.png" download="test2" id="test1">下载答题卡模板</a>
+        <a href="./img/other/3.png" download="test3" id="test1">下载答题卡模板</a>
+        <a href="./img/other/4.png" download="test4" id="test1">下载答题卡模板</a>
+    </div>
 </template>
 
 <script setup>
@@ -139,10 +138,13 @@ import ICON from '@/assets/img/icon/output'
 import BG from '@/assets/img/output-bg'
 import { onMounted , getCurrentInstance , ref } from 'vue'
 let banner=ref(null)
+let bannerIcon = ref(true)
 onMounted( () => {
     console.log(getCurrentInstance())
     console.log(banner.value)
 } )
+const showIcon = (e) => {bannerIcon.value = true}
+const hideIcon = (e) => {bannerIcon.value = false}
 </script>
 
 <style scoped lang="scss">
