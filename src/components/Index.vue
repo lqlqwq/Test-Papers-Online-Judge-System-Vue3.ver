@@ -1,5 +1,4 @@
 <template>
-    <img :src="BG.Hiten1" alt="" style="display: none">
     <div style="display: none" id="top"><a href="#logo" class="go-top"
             :style="`background-image: url(${ICON.go_top})`"></a>
     </div> <!-- 回顶部 -->
@@ -135,13 +134,12 @@
 
 <script setup>
 import ICON from '@/assets/img/icon/output'
-import BG from '@/assets/img/output-bg'
 import { onMounted , getCurrentInstance , ref } from 'vue'
 let banner=ref(null)
 let bannerIcon = ref(true)
 onMounted( () => {
-    console.log(getCurrentInstance())
-    console.log(banner.value)
+    // console.log(getCurrentInstance())
+    // console.log(banner.value)
 } )
 const showIcon = (e) => {bannerIcon.value = true}
 const hideIcon = (e) => {bannerIcon.value = false}
@@ -296,7 +294,7 @@ const hideIcon = (e) => {bannerIcon.value = false}
         display: block;
         height: 0;
         clear: both;
-        visibility: hidden
+        visibility: hidden;
     }
 }
 

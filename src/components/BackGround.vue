@@ -1,16 +1,29 @@
 <template>
-    <div class="bg" :style="`background-image: url(${bg[bgName]})`"></div>
-    <div class="bg-after"></div>
+    <div class="bg" :style="`background-image: url(${BG[bgName]})`"></div>
+    <transition>
+        <div v-if="index" v-show="index!=='wait'" class="bg-after-index"></div>
+    </transition>
+    <div v-if="!index" class="bg-after"></div>
 </template>
 
 <script setup>
-import bg from '@/assets/img/output-bg'
+import BG from '@/assets/img/output-bg'
+import { reactive } from "vue"
 const props = defineProps({
     bgName: {
         type: String,
         required: true
+    },
+    index: {
+        type: String,
+        required: true
     }
 })
+
+const data = reactive({
+  noActivated: false
+});
+// v-if="index" v-show="index!=='wait'"
 </script>
 
 <style scoped>
@@ -27,7 +40,7 @@ const props = defineProps({
 }
 
 .bg-after {
-    opacity: 0.2;
+    opacity: 0.8;
     background-size: cover;
     background-color: white;
     position: fixed;
@@ -36,5 +49,23 @@ const props = defineProps({
     height: 100%;
     width: 100%;
     z-index: -1
+}
+.bg-after-index {
+    opacity: 0.4;
+    background-size: cover;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+.v-enter-from{
+    opacity: 0;
+}
+.v-enter-active{
+    transition: opacity 2s ease;
 }
 </style>
