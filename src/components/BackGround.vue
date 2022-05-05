@@ -66,6 +66,6 @@ const data = reactive({
     opacity: 0;
 }
 .v-enter-active{
-    transition: opacity 2s ease;
+    transition: opacity 3s ease;
 }
 </style>

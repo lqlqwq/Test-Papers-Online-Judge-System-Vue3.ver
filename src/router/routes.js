@@ -6,17 +6,22 @@ const router = createRouter({
     routes: [
         {
             path: '/',
-            redirect: '/index'
+            redirect: '/index',
         },
         {
             path: '/login',
-            component: Login
+            component: Login,
+            
         },
         {
             path: '/index',
-            component: Index
+            component: Index,
+            beforeEnter:(to,from,next) => {
+                console.log(to,from)
+                next()
+            }
         }
-    ]
+    ],
 })
 
 export { router }

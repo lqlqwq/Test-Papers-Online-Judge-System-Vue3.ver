@@ -35,7 +35,7 @@ const showSnow = () => {
     if (image_bg.value.complete) {
         setTimeout(function () {
             SNOW().init(snow.value)
-        }, 5000)
+        }, 3000)
         index.value = 'index'
         clearInterval(show)
     }

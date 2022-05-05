@@ -1,8 +1,8 @@
 <template>
-    <div class="title">
+    <div class="title" v-if="type==='main'">
         <ul>
             <li><a href="javascript:void(0)" class="logo">大肥羊智能评卷系统</a></li>
-            <li><a href="javascript:void(0)" rel="external nofollow">产品简介</a></li>
+            <li><a href="javascript:void(0)" rel="external nofollow" @click="goPos(500)">产品简介</a></li>
             <li><a href="javascript:void(0)" rel="external nofollow">支持</a></li>
             <span><a href="javascript:void(0)" rel="external nofollow" class="user" id="user-main">用户中心</a></span>
             <span class="user" style="color: #97ff95" id="welcome">欢迎</span>
@@ -11,7 +11,23 @@
 </template>
 
 <script setup>
-
+import { onMounted, getCurrentInstance, ref } from 'vue'
+import { useRouter, useRoute } from 'vue-router'
+const props = defineProps({
+    type: {
+        type: String
+    }
+})
+const goPos =  (a) => {
+    console.log(thisComponent)
+}
+const thisComponent = getCurrentInstance()
+const router = useRouter()
+const route = useRoute()
+onMounted(() => {
+    // console.log(router.currentRoute)
+    // console.log(route.fullPath)
+})
 </script>
 
 <style scoped lang="scss">
